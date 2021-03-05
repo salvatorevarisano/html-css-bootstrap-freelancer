@@ -1,0 +1,54 @@
+/* GENERAL */
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+/* UTILITIES */
+/* color */
+.white-text {
+    color: #fff;
+}
+
+.bg-primary-color {
+    background-color: #19bc9c;
+}
+
+.bg-secondary-color {
+    background-color:  #2c3e50;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+/* HEADER CONTENT */
+.main-header .my-navbar {
+    height: 90px;
+    margin-bottom: 0;
+    border: none;
+}
+.main-header .my-brand,
+.main-header .my-navbar li > a {
+    padding: 0 15px;
+    line-height: 90px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* MAIN CONTENT */
+
+.my-hero img {
+    width: 230px ;
+}
+
+/* SECTION PORTFOLIO */
+.portfolio-item {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* SECTION CONTACT */
+.main-form {
+    text-align: left;
+}
