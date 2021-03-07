@@ -1,4 +1,9 @@
 /* GENERAL */
+html{
+    scroll-padding-top: 90px;
+    scroll-behavior: smooth;
+}
+
 body {
      padding-top: 90px;
 }
@@ -9,11 +14,30 @@ h3 {
     text-transform: uppercase;
 }
 
+h3 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+p {
+    font-size: 16px;
+}
+
 /* UTILITIES */
 /* color */
+.main-header .my-navbar li > a,
+.my-navbar  .white-text,
 .white-text {
     color: #fff;
 }
+
+.created,
+.top-footer li > a:hover,
+.my-navbar .my-brand:hover,
+.main-header .my-navbar li > a:hover {
+    color: #19bc9c;
+}
+
 .bg-primary-color {
     background-color: #19bc9c;
 }
@@ -24,12 +48,16 @@ h3 {
     background: #3a546d;
 }
 
+.mb-20 {
+    margin-bottom: 20px;
+}
 .mb-30 {
     margin-bottom: 30px;
 }
 
 .star-icon {
     font-size: 32px;
+    vertical-align: middle;
 }
 
 .star-divisor::before,
@@ -40,6 +68,7 @@ h3 {
     content: "";
     background-color: currentColor;
 }
+
 /* HEADER CONTENT */
 .main-header .my-navbar {
     height: 90px;
@@ -52,9 +81,9 @@ h3 {
     padding: 0 15px;
     line-height: 90px;
 }
-.my-navbar .my-brand:hover,
-.main-header .my-navbar li > a:hover {
-    color: #19bc9c;
+
+.my-brand {
+    font-weight: bold;
 }
 
 .my-navbar > .my-hamburger {
@@ -64,14 +93,95 @@ h3 {
     float: none;
 }
 /* MAIN CONTENT */
-
+.my-hero {
+    padding-bottom: 40px;
+}
 .my-hero img {
     width: 230px ;
 }
 
 /* SECTION PORTFOLIO */
 .portfolio-item {
+    position: relative;
     overflow: hidden;
     border-radius: 10px;
 }
 
+/* .portfolio .img-container .layover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(68, 188, 156, 0.75);
+}
+.portfolio .img-container .layover i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem;
+    color: #fff;
+} */
+
+/* SECTION ABOUT */
+section#about {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.my-download-btn {
+    background-color: transparent;
+    border: 1px solid white;
+}
+.my-download-btn:hover {
+    background-color: white;
+}
+
+/* SECTION CONTACT */
+#contact {
+    padding-bottom:30px ;
+}
+
+.main-form textarea,
+.main-form input {
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #eaeaea;
+    border-radius: 0;
+}
+
+.main-form textarea {
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+.top-footer {
+    padding: 50px 0;
+}
+
+.top-footer ul {
+    padding-left: 0;
+}
+
+.top-footer li {
+    display: inline-block;
+    list-style: none;
+}
+
+.top-footer li > a {
+    display: inline-block;
+    height: 52px;
+    width: 52px;
+    font-size: 22px;
+    line-height: 52px;
+    color: currentColor;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.bottom-footer {
+    padding: 30px 0;
+}
